@@ -1,24 +1,13 @@
-
 .card-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 20px;
-    width: 300px;
-    height: 450px;
-    gap: 50px;
-
-    margin: 150px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-img {
-    width: 200px;
-}
-
-h1{
-    font-size: 18px;
-    font-weight: 500;
+    align-items: flex-start;
+    justify-content: space-around;
+    
+    width: 405px;
+    height: 226px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px 10px rgba(0, 0, 0, 0.1);
 }
