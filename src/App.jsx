@@ -1,60 +1,24 @@
-// function Filho({ children }) {
-//   return (
-//     <div className="filho">
-//       {children}
-//     </div>
-//   )
-// }
-
-
-// Uso da promp de tipo number
-
-// function Filho({idade}) {
-//   return(
-//     <p>{idade}</p>
-//   )
-// }
-
-// function Filho({ approved }) {
-//   return (
-//     <>
-//       {approved ? (
-//         <>
-//           <p>aprovado</p>
-//           <img src="https://pbs.twimg.com/tweet_video_thumb/Fys8siuWIAM11Pe.jpg" alt="" />
-//         </>
-//       ) : (
-//         <>
-//           <p>reprovado</p>
-//           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQbB8X1K3GNhUCGjtFx4AzZbBI4TM3g-0m-A&s" alt="" />
-//         </>
-//       )}
-
-//     </>
-//   )
-// }
-
-// Isso é verdadeiro ou falso ? retorno : (se não) retorno
-
-
-// function Filho({onAlert}) {
-//   return(
-//     <button onClick={onAlert} >Click Aqui</button>
-//   )
-// }
-
-
-
-function Filho({nome = "Mundo"}) {
-  return <p>Olá, {nome}!</p>
-}
+// import './App.css'
+import Header from "./components/header"
+import Section from "./components/section-home"
+import Card from "./components/card"
+import Caixote from "./assets/img/Caixote.svg"
+import Hero from "./components/hero/"
 
 export default function App() {
-  
-  const handleAlert = () => alert("Receba seu doce")
-
   return (
-    <Filho nome = "Ana" />
+      <div className='app-container'>
+          <Header />
+          
+          <Section />
 
+          <Card scr= {Caixote}
+          title= "Highlight benefit two"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros elementum tristique.
+                    Duis cursus, mi quis viverra ornare, eros dolor interdum nulla."/>
+
+          <Hero aligment="left" />
+      </div>
   )
 }
