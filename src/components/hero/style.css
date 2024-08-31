@@ -1,0 +1,49 @@
+.hero-container{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+}
+
+.hero-text > h6{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero-text > h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero-text > p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hero-text > button{
+    width: 129px;
+    height: 64px;
+
+    background-color: transparent;
+    border: 1px solid black;
+    margin-top: 24px;
+
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-text > button:hover{
+    background-color: black;
+    color: white;
+}
+
+.hero-right{
+    flex-direction: row-reverse;
+}
