@@ -1,4 +1,6 @@
 import ImgNull from '../../assets/img/img-section.svg'
+import './style.css'
+
 export default function SectionHome() {
     return (
         <div className="section-home">
